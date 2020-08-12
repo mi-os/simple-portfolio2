@@ -1,0 +1,117 @@
+.section {
+    &__container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 36px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+}
+
+.top {
+    &__headline {
+        max-width: 450px;
+        text-align: left;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 32px;
+        }
+    }
+
+    &__arrow-container {
+        bottom: 130px;
+        height: 120px;
+
+        img {
+            width: 12px;
+        }
+
+        span {
+            font-size: 22px;
+            left: 16px;
+            top: 6px;
+        }
+    }
+}
+
+.works {
+    &__item-circle {
+        width: 270px;
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__description {
+        font-size: 18px;
+    }
+}
+
+.portfolio {
+    &__item {
+        height: 380px;
+    }
+
+    &__link-container {
+    }
+    
+    &__link {
+        font-size: 16px;
+        width: 175px;
+    }
+
+    &__skill {
+        font-size: 14px;
+        padding: 3px 9px;
+        margin: 6px;
+    }
+}
+
+.skill {
+    &__item {
+        width: 180px;
+    }
+}
+
+.contact {
+
+    &__form-item {
+        max-width: 700px;
+
+        dl {
+            flex-wrap: nowrap;
+
+            dt {
+                width: 25%;
+                margin-right: 30px;
+            }
+
+            dd {
+                width: 80%;
+            }
+        }
+    }
+
+    &__submit-container {
+        .submit-button {
+            padding: 12px 60px;
+
+            font-size: 18px;
+        }
+    }
+}
