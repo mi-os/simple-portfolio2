@@ -1,0 +1,45 @@
+.portfolio {
+    &__container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 390px;
+        height: 220px;
+    }
+}
+
+.skill {
+    &__container {
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.nav {
+    position: fixed;
+    left: -146px;
+    top: 50%;
+    width: 480px;
+    height: 0;
+    transform: rotate(90deg);
+
+    &__container {
+        padding: 20px 50px;
+    }
+
+
+    &__items {
+        transform: rotate(-90deg);
+
+        .bi {
+            font-size: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 6px;
+        width: 70px;
+    }
+}
