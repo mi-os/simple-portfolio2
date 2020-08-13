@@ -1,3 +1,9 @@
 styles/style.scss
 styles/style.css
 styles/style.css.map
+
+styles/loader.scss
+styles/loader.css
+styles/loader.css.map
+
+scripts/main.js
