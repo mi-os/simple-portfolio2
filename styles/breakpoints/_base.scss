@@ -1,12 +1,16 @@
 $font-secTitle: 26px;
 $font-secSpan: 16px;
 
+$noto: 'Noto Sans JP', sans-serif;
+
+
 html {
     scroll-behavior: smooth;
+    font-family: $noto;
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 60px 20px 150px;
     
     &__container {
         max-width: 970px;
@@ -16,6 +20,7 @@ html {
     &__title {
         text-align: center;
         margin-bottom: 30px;
+        color: $cBlack;
 
         h2 {
             font-size: $font-secTitle;
@@ -102,6 +107,13 @@ html {
   }
 }
 
+.wave {
+    position: absolute;
+    top: -4%;
+    left: 0;
+    width: 100%;
+}
+
 .works {
     // background-color: rgb(226, 255, 233);
 
@@ -140,7 +152,12 @@ html {
 }
 
 .portfolio {
-    // background-color: rgb(209, 247, 255);
+    background-color: rgb(162, 216, 255);
+    position: relative;
+
+    & .section__title {
+        color: $cWhite;
+    }
 
     &__container {
         display: flex;
@@ -232,6 +249,7 @@ html {
 
 .skill {
     text-align: center;
+    position: relative;
     // background-color: rgb(255, 195, 195);
 
     &__container {
@@ -252,7 +270,8 @@ html {
 }
 
 .contact {
-    // background-color: rgb(250, 255, 184);
+    background-color: #ebfffb;
+    position: relative;
 
     &__form {
         .name, .email {
@@ -310,9 +329,16 @@ html {
     }
 }
 
+.bottom-area {
+    background: -moz-linear-gradient(top,#ebfffb, #FFF);
+    background: -webkit-linear-gradient(top, #ebfffb, #FFF);
+    background: linear-gradient(to bottom, #ebfffb, #FFF);
+}
+
 .copyright {
+    color: $cBlack;
     text-align: center;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 
