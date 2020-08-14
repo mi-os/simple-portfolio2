@@ -1,4 +1,6 @@
 .section {
+    padding: 60px 20px 200px;
+
     &__container {
         width: 90%;
     }
@@ -41,6 +43,10 @@
             top: 6px;
         }
     }
+}
+
+.wave2 {
+    top: -20%;
 }
 
 .works {
