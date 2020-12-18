@@ -1,120 +1,189 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175306302-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175306302-1"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-175306302-1');
+      gtag("config", "UA-175306302-1");
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makoto's Portfolio Site</title>
-    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/loader.css" />
     <script src="scripts/vendors/pace.js"></script>
     <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <section class="top">
-        <div class="top__container">
-            <div class="top__headline">
-                <h1>Hi, I'm Makoto.</h1>
-                <p>This is my portfolio site.</p>
-            </div>
-            <div class="top__arrow-container">
-                <img src="images/arrow.svg" alt="arrow">
-                <span>scroll</span>
-            </div>
+      <div class="top__container">
+        <div class="top__headline">
+          <h1>Hi, I'm Makoto.</h1>
+          <p>This is my portfolio site.</p>
         </div>
+        <div class="top__arrow-container">
+          <img src="images/arrow.svg" alt="arrow" />
+          <span>scroll</span>
+        </div>
+      </div>
     </section>
     <section id="work" class="works section">
-        <div class="section__container appear">
-            <div class="section__title">
-                <h2><span>Works</span><br>できること</h2>
-            </div>
-            <div class="works__item-container">
-                <div class="works__item">
-                    <div class="works__item-circle">
-                        <img src="images/web_development.svg" alt="web_development">
-                        <h3 class="works__title">Webサイト制作</h3>
-                    </div>
-                    <p class="works__description">HTMl / CSSを使ったWebサイトの制作を行います。</p>
-                </div>
-            </div>
+      <div class="section__container appear">
+        <div class="section__title">
+          <h2><span>Works</span><br />できること</h2>
         </div>
+        <div class="works__item-container">
+          <div class="works__item">
+            <div class="works__item-circle">
+              <img src="images/web_development.svg" alt="web_development" />
+              <h3 class="works__title">Webサイト制作</h3>
+            </div>
+            <p class="works__description">
+              HTMl / CSSを使ったWebサイトの制作を行います。
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="portfolio" class="portfolio section">
-        <div class="wave"><img src="images/port-wave.svg" alt="blue-wave"></div>
-        <div class="section__container">
-            <div class="section__title">
-                <h2><span>Portfolio</span><br>ポートフォリオ</h2>
+      <div class="wave"><img src="images/port-wave.svg" alt="blue-wave" /></div>
+      <div class="section__container">
+        <div class="section__title">
+          <h2><span>Portfolio</span><br />ポートフォリオ</h2>
+        </div>
+        <div class="portfolio__container">
+          <div
+            class="portfolio__item"
+            style="
+              background-image: url(images/portfolios/farmers-site.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="portfolio__hover">
+              <div class="portfolio__hover-container">
+                <div class="portfolio__link-container">
+                  <a
+                    href="http://ms-farmers-demo-site.s3-website-ap-northeast-1.amazonaws.com"
+                    target="_blank"
+                  >
+                    <p class="portfolio__link">サイトへ行く</p>
+                  </a>
+                </div>
+                <div class="portfolio__skill-container">
+                  <p class="portfolio__skill">AWS S3</p>
+                  <p class="portfolio__skill">jQuery</p>
+                  <a
+                    class="portfolio__skill"
+                    href="https://xd.adobe.com/view/7f30b895-d3ea-4023-9a5a-f01ff59e7101-2a63/"
+                    target="_blank"
+                    >Adobe XD</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="portfolio__container">
-                <div class="portfolio__item" style="background-image: url(images/portfolios/farmers-site.jpg); background-size: cover;">
-                    <div class="portfolio__hover">
-                        <div class="portfolio__hover-container">
-                            <div class="portfolio__link-container">
-                                <a href="http://ms-farmers-demo-site.s3-website-ap-northeast-1.amazonaws.com" target="_blank">
-                                    <p class="portfolio__link">サイトへ行く</p>
-                                </a>
-                            </div>
-                            <div class="portfolio__skill-container">
-                                <p class="portfolio__skill">AWS S3</p>
-                                <p class="portfolio__skill">jQuery</p>
-                                <a class="portfolio__skill" href="https://xd.adobe.com/view/7f30b895-d3ea-4023-9a5a-f01ff59e7101-2a63/" target="_blank">Adobe XD</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div
+            class="portfolio__item"
+            style="
+              background-image: url(images/portfolios/shopify-farmers.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="portfolio__hover">
+              <div class="portfolio__hover-container">
+                <div class="portfolio__link-container">
+                  <a
+                    href="https://bootcamp-test-app.myshopify.com"
+                    target="_blank"
+                  >
+                    <p class="portfolio__link">サイトへ行く</p>
+                  </a>
                 </div>
-                <div class="portfolio__item" style="background-image: url(images/portfolios/wp-farmers.png); background-size: cover;">
-                    <div class="portfolio__hover">
-                        <div class="portfolio__hover-container">
-                            <div class="portfolio__link-container">
-                                <a href="https://xensrv.xsrv.jp/" target="_blank">
-                                    <p class="portfolio__link">サイトへ行く</p>
-                                </a>
-                            </div>
-                            <div class="portfolio__skill-container">
-                                <p class="portfolio__skill">WordPress</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="portfolio__skill-container">
+                  <p class="portfolio__skill">Shopify</p>
+                  <p class="portfolio__skill">パスワード「aostab」</p>
                 </div>
-                <div class="portfolio__item" style="background-image: url(images/portfolios/website-builder.png); background-size: cover;">
-                    <div class="portfolio__hover">
-                        <div class="portfolio__hover-container">
-                            <div class="portfolio__link-container">
-                                <a href="https://corporatelp-1.netlify.app" target="_blank">
-                                    <p class="portfolio__link">サイトへ行く</p>
-                                </a>
-                            </div>
-                            <div class="portfolio__skill-container">
-                                <p class="portfolio__skill">jQuery</p>
-                                <p class="portfolio__skill">Netlify</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="portfolio__item"
+            style="
+              background-image: url(images/portfolios/wp-farmers.png);
+              background-size: cover;
+            "
+          >
+            <div class="portfolio__hover">
+              <div class="portfolio__hover-container">
+                <div class="portfolio__link-container">
+                  <a href="https://xensrv.xsrv.jp/" target="_blank">
+                    <p class="portfolio__link">サイトへ行く</p>
+                  </a>
                 </div>
-                <div class="portfolio__item" style="background-image: url(images/portfolios/dental-clinic.jpg); background-size: cover;">
-                    <div class="portfolio__hover">
-                        <div class="portfolio__hover-container">
-                            <div class="portfolio__link-container">
-                                <a href="http://ms-dental-clinic.s3-website-ap-northeast-1.amazonaws.com" target="_blank">
-                                    <p class="portfolio__link">サイトへ行く(for PC)</p>
-                                </a>
-                            </div>
-                            <div class="portfolio__skill-container">
-                                <p class="portfolio__skill">AWS S3</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="portfolio__skill-container">
+                  <p class="portfolio__skill">WordPress</p>
                 </div>
-                <!-- <div class="portfolio__item" style="background-image: url(images/portfolios/myportfolio.jpg); background-size: cover;">
+              </div>
+            </div>
+          </div> -->
+          <div
+            class="portfolio__item"
+            style="
+              background-image: url(images/portfolios/website-builder.png);
+              background-size: cover;
+            "
+          >
+            <div class="portfolio__hover">
+              <div class="portfolio__hover-container">
+                <div class="portfolio__link-container">
+                  <a href="https://corporatelp-1.netlify.app" target="_blank">
+                    <p class="portfolio__link">サイトへ行く</p>
+                  </a>
+                </div>
+                <div class="portfolio__skill-container">
+                  <p class="portfolio__skill">jQuery</p>
+                  <p class="portfolio__skill">Netlify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio__item"
+            style="
+              background-image: url(images/portfolios/dental-clinic.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="portfolio__hover">
+              <div class="portfolio__hover-container">
+                <div class="portfolio__link-container">
+                  <a
+                    href="http://ms-dental-clinic.s3-website-ap-northeast-1.amazonaws.com"
+                    target="_blank"
+                  >
+                    <p class="portfolio__link">サイトへ行く(for PC)</p>
+                  </a>
+                </div>
+                <div class="portfolio__skill-container">
+                  <p class="portfolio__skill">AWS S3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="portfolio__item" style="background-image: url(images/portfolios/myportfolio.jpg); background-size: cover;">
                     <div class="portfolio__hover">
                         <div class="portfolio__hover-container">
                             <div class="portfolio__link-container">
@@ -130,139 +199,248 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="portfolio__item" style="background-image: url(images/portfolios/corporate-site.jpg); background-size: cover;">
-                    <div class="portfolio__hover">
-                        <div class="portfolio__hover-container">
-                            <div class="portfolio__link-container">
-                                <a href="https://ms-corporate-site.s3-ap-northeast-1.amazonaws.com/index.html" target="_blank">
-                                    <p class="portfolio__link">サイトへ行く(for PC)</p>
-                                </a>
-                            </div>
-                            <div class="portfolio__skill-container">
-                                <p class="portfolio__skill">Photoshop</p>
-                                <p class="portfolio__skill">AWS S3</p>
-                                <p class="portfolio__skill">webpack</p>
-                            </div>
-                        </div>
-                    </div>
+          <div
+            class="portfolio__item"
+            style="
+              background-image: url(images/portfolios/corporate-site.jpg);
+              background-size: cover;
+            "
+          >
+            <div class="portfolio__hover">
+              <div class="portfolio__hover-container">
+                <div class="portfolio__link-container">
+                  <a
+                    href="https://ms-corporate-site.s3-ap-northeast-1.amazonaws.com/index.html"
+                    target="_blank"
+                  >
+                    <p class="portfolio__link">サイトへ行く(for PC)</p>
+                  </a>
                 </div>
+                <div class="portfolio__skill-container">
+                  <p class="portfolio__skill">Photoshop</p>
+                  <p class="portfolio__skill">AWS S3</p>
+                  <p class="portfolio__skill">webpack</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="skill" class="skill section">
-        <div class="wave wave2"><img src="images/skill-wave.svg" alt="white-wave"></div>
-        <div class="section__container">
-            <div class="section__title">
-                <h2><span>Skill</span><br>使用言語・ツール</h2>
-            </div>
-            <div class="skill__container">
-                <div class="skill__item">
-                    <img src="images/skills/html5.svg" alt="html5">
-                    <p>HTML5</p>
-                </div>
-                <div class="skill__item">
-                    <img src="images/skills/css3.svg" alt="css3">
-                    <p>CSS3</p>
-                </div>
-                <div class="skill__item">
-                    <img src="images/skills/sass.svg" alt="sass">
-                    <p>Sass</p>
-                </div>
-                <div class="skill__item">
-                    <img src="images/skills/javascript.svg" alt="javascript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill__item">
-                    <img src="images/skills/jquery.svg" alt="jquery">
-                    <p>jQuery</p>
-                </div>
-                <div class="skill__item">
-                    <img src="images/skills/webpack.svg" alt="webpack">
-                    <p>webpack</p>
-                </div>
-                <div class="skill__item">
-                    <img src="images/skills/photoshop.svg" alt="photoshop">
-                    <p>Photoshop</p>
-                </div>
-            </div>
+      <div class="wave wave2">
+        <img src="images/skill-wave.svg" alt="white-wave" />
+      </div>
+      <div class="section__container">
+        <div class="section__title">
+          <h2><span>Skill</span><br />使用言語・ツール</h2>
         </div>
+        <div class="skill__container">
+          <div class="skill__item">
+            <img src="images/skills/html5.svg" alt="html5" />
+            <p>HTML5</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/css3.svg" alt="css3" />
+            <p>CSS3</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/sass.svg" alt="sass" />
+            <p>Sass</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/javascript.svg" alt="javascript" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/jquery.svg" alt="jquery" />
+            <p>jQuery</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/webpack.svg" alt="webpack" />
+            <p>webpack</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/photoshop.svg" alt="photoshop" />
+            <p>Photoshop</p>
+          </div>
+          <div class="skill__item">
+            <img src="images/skills/shopify_logo.png" alt="shopify" />
+            <p>Shopify</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="contact section">
-        <div class="wave wave2"><img src="images/contact-wave.svg" alt="green-wave"></div>
-        <div class="section__container">
-            <div class="section__title">
-                <h2><span>Contact</span><br>コンタクト</h2>
-            </div>
-            <div class="contact__container">
-                <form class="contact__form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjMSSX-_zPFBx3DkpuB_o-1aTOXefLMrkppxJmtirMFv3rLQ/formResponse">
-                    <div class="contact__form-item">
-                        <dl>
-                            <dt><label for="name">お名前</label></dt>
-                            <dd><input class="name" type="text" name="entry.42546163" placeholder="山田 太郎" required></dd>
-                        </dl>
-                    </div>
-                    <div class="contact__form-item">
-                        <dl>
-                            <dt><label for="email">メールアドレス</label></dt>
-                            <dd><input class="email" type="text" name="entry.698186615" placeholder="example@email.com" required></dd>
-                        </dl>
-                    </div>
-                    <div class="contact__form-item">
-                        <dl>
-                            <dt><label for="content">お問い合わせ</label></dt>
-                            <dd><textarea name="entry.597657824" id="content" placeholder="お気軽にお問い合わせください" required></textarea></dd>
-                        </dl>
-                    </div>
-                    <div class="contact__submit-container contact__form-item">
-                        <input type="submit" class="submit-button" name="submit" value="送信する">
-                    </div>
-                </form>
-            </div>
+      <div class="wave wave2">
+        <img src="images/contact-wave.svg" alt="green-wave" />
+      </div>
+      <div class="section__container">
+        <div class="section__title">
+          <h2><span>Contact</span><br />コンタクト</h2>
         </div>
+        <div class="contact__container">
+          <form
+            class="contact__form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjMSSX-_zPFBx3DkpuB_o-1aTOXefLMrkppxJmtirMFv3rLQ/formResponse"
+          >
+            <div class="contact__form-item">
+              <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd>
+                  <input
+                    class="name"
+                    type="text"
+                    name="entry.42546163"
+                    placeholder="山田 太郎"
+                    required
+                  />
+                </dd>
+              </dl>
+            </div>
+            <div class="contact__form-item">
+              <dl>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd>
+                  <input
+                    class="email"
+                    type="text"
+                    name="entry.698186615"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </dd>
+              </dl>
+            </div>
+            <div class="contact__form-item">
+              <dl>
+                <dt><label for="content">お問い合わせ</label></dt>
+                <dd>
+                  <textarea
+                    name="entry.597657824"
+                    id="content"
+                    placeholder="お気軽にお問い合わせください"
+                    required
+                  ></textarea>
+                </dd>
+              </dl>
+            </div>
+            <div class="contact__submit-container contact__form-item">
+              <input
+                type="submit"
+                class="submit-button"
+                name="submit"
+                value="送信する"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
     <div class="bottom-area">
-        <div class="copyright"><small>© makoto's portfolio site</small></div>
-        <footer class="footer"></footer>
+      <div class="copyright"><small>© makoto's portfolio site</small></div>
+      <footer class="footer"></footer>
     </div>
     <div class="nav">
-        <div class="nav__container">
-            <a class="nav__items" href="#">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
-                    <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                </svg>
-                <p class="nav__title">ホーム</p>
-            </a>
-            <a class="nav__items" href="#work">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                    <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"/>
-                </svg>
-                <p class="nav__title">できること</p>
-            </a>
-            <a class="nav__items" href="#portfolio">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-files" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3z"/>
-                    <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
-                </svg>
-                <p class="nav__title">ポートフォリオ</p>
-            </a>
-            <a class="nav__items" href="#skill">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
-                    <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/>
-                </svg>
-                <p class="nav__title">スキル</p>
-            </a>
-            <a class="nav__items" href="#contact">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                </svg>
-                <p class="nav__title">コンタクト</p>
-            </a>
-        </div>
+      <div class="nav__container">
+        <a class="nav__items" href="#">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-house-door"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+            />
+          </svg>
+          <p class="nav__title">ホーム</p>
+        </a>
+        <a class="nav__items" href="#work">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-check2-circle"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"
+            />
+          </svg>
+          <p class="nav__title">できること</p>
+        </a>
+        <a class="nav__items" href="#portfolio">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-files"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3z"
+            />
+            <path
+              d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"
+            />
+          </svg>
+          <p class="nav__title">ポートフォリオ</p>
+        </a>
+        <a class="nav__items" href="#skill">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-file-code"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
+            />
+          </svg>
+          <p class="nav__title">スキル</p>
+        </a>
+        <a class="nav__items" href="#contact">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-envelope"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+            />
+          </svg>
+          <p class="nav__title">コンタクト</p>
+        </a>
+      </div>
     </div>
 
     <script src="scripts/main.min.js"></script>
-</body>
+  </body>
 </html>
